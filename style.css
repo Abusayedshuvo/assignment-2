@@ -45,14 +45,19 @@ body {
     text-transform: uppercase;
 }
 
-.linear {
+.linear-text {
     background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
+
 .description {
-   font-size: 18px;
-   line-height: 30px;
+    font-size: 18px;
+    line-height: 30px;
 }
+
 /* header css */
 
 .navbar {
@@ -196,6 +201,148 @@ nav .social {
     font-size: 1.5rem;
     font-weight: 500;
     margin-bottom: 0;
+}
+
+/* online games css */
+
+.games {
+    margin: 120px 0;
+}
+
+.games .content {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.games h1 {
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.games .card-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+}
+
+.games .card .img-box {
+    position: relative;
+}
+
+.games .card .img-box img {
+    width: 100%;
+    border: 4px solid;
+    border-color: #fff;
+    border-radius: 22px;
+    transition: all 0.3s;
+}
+
+
+.games .card:hover img {
+    border-color: #FF42A5;
+    transition: all 0.3s;
+}
+
+
+
+.games .card p {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.overly {
+    background-color: #000000bd;
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    right: 4px;
+    bottom: 8px;
+    opacity: 0;
+    width: 100%;
+    border-radius: 1rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: opacity 0.4s ease-in;
+}
+
+.overly .play a {
+    color: #fff;
+    font-size: 48px;
+}
+
+.overly .watch {
+    background: linear-gradient(90deg, #FF42A5 0%, #FF42A5 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.games .card:hover .overly {
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out;
+}
+
+/* play-instant css */
+
+.play-instant .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.play-instant h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 60px;
+    margin: 0;
+}
+
+.play-instant .content {
+    max-width: 350px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.play-instant .img-box {
+    position: relative;
+}
+
+.play-instant .img-box .sm-img {
+    position: absolute;
+    left: -100px;
+    bottom: -100px;
+}
+
+.play-games {
+    margin-top: 200px;
+    margin-bottom: 120px;
+}
+
+
+.play-games .img-box .sm-img {
+    position: absolute;
+    right: -100px;
+    left: auto;
+    bottom: -100px;
+}
+
+
+.play-games .content {
+    text-align: left;
+}
+
+
+.play-instant .content {
+    max-width: 480px;
 }
 
 
