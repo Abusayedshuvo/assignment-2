@@ -215,12 +215,10 @@ nav .social {
 }
 
 .games h1 {
-    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color: var(--black-two);
     font-size: 3rem;
     font-weight: 700;
+    margin-bottom: 10px;
 }
 
 .games .card-container {
@@ -341,14 +339,14 @@ nav .social {
 }
 
 
-.play-instant .content {
-    max-width: 480px;
+.play-games .content {
+    max-width: 450px;
 }
 
 /* career css */
- 
 
-.career  {
+
+.career {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -375,7 +373,7 @@ nav .social {
     text-align: right;
 }
 
-.career .place ul li{
+.career .place ul li {
     font-size: 1.25rem;
     font-weight: 600;
     line-height: 40px;
@@ -392,11 +390,98 @@ nav .social {
     margin-top: 30px;
 }
 
+/* tags css */
+.tags {
+    margin: 120px 0;
+    text-align: center;
+}
+
+.tags a {
+    display: inline-flex;
+    color: var(--black-two);
+    font-size: 20px;
+    font-weight: 600;
+    text-decoration: none;
+    align-items: center;
+    gap: 16px;
+    border: solid 2px #fff;
+    padding: 10px;
+    margin: 12px;
+    border-radius: 50px;
+    transition: all 0.3s;
+}
+
+.tags a:hover {
+    border: solid 2px #FF42A5;
+    color: #FF42A5;
+    transition: all 0.4s;
+}
+
+/* footer css */
+
+footer {
+    background-color: #0B0223;
+    text-align: center;
+    padding: 120px 0;
+}
+
+footer ul {
+    list-style: none;
+}
+
+footer ul li {
+    display: inline-block;
+    padding: 0 30px;
+    font-weight: 600;
+}
+
+footer ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+footer .link-two li a {
+    font-size: 16px;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.60);
+
+}
+
+footer .scoial a i {
+    font-size: 40px;
+}
+
+footer p small {
+    color: rgba(255, 255, 255, 0.60);
+}
+
+footer .scoial {
+    margin: 70px 0;
+}
+
+footer .link-two {
+    margin-bottom: 25px;
+}
 
 
+footer .logo {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    margin-bottom: 65px;
+    justify-content: center;
+}
 
+footer .logo h1 {
+    font-size: 45px;
+    font-weight: 700;
+    margin: 0;
+    color: #fff;
+}
 
-
+footer .logo h1 span {
+    color: #FF42A5;
+}
 
 
 
@@ -413,5 +498,294 @@ nav .social {
         max-width: 1440px;
         margin-left: auto;
         margin-right: auto;
+    }
+}
+
+@media screen and (max-width: 576px) {
+
+    nav,
+    .banner .container,
+    .about .container,
+    .play-instant .container,
+    .career,
+    nav .menu,
+    nav .menu ul {
+        flex-direction: column;
+    }
+
+    .banner .container,
+    .play-games .container
+    {
+        flex-direction: column-reverse;
+    }
+
+    nav .social ul {
+        flex-direction: row;
+    }
+
+    nav .menu ul li {
+        margin: 20px 0;
+    }
+
+    nav .social ul li {
+        margin: 0;
+    }
+
+
+    .games .card-container {
+        grid-template-columns: 1fr;
+        gap: 24px;
+    }
+
+    .banner {
+        padding: 30px;
+    }
+
+    .banner .btn-secondary {
+        margin-left: 5px;
+    }
+
+    .career {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .about .content {
+        text-align: center;
+        max-width: 100%;
+    }
+
+    .container {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .play-instant .img-box .sm-img {
+        left: 0;
+        width: 50%;
+    }
+
+    .play-games .img-box .sm-img {
+        left: 0;
+        width: 50%;
+    }
+
+    .play-games .content {
+        text-align: center;
+    }
+
+    .tags a { 
+        font-size: 13px;
+        font-weight: 500; 
+        gap: 6px; 
+        padding: 8px;
+        margin: 5px 0; 
+    }
+
+    .tags a img {
+        width: 40px;
+    }
+
+    footer ul {
+        padding: 0;
+    }
+
+    footer ul li {
+        padding: 20px;
+    }
+}
+ 
+
+
+
+@media screen and (min-width:576px) and (max-width: 992px) {
+
+    nav,
+    .banner .container,
+    .about .container,
+    .play-instant .container,
+    .career,
+    nav .menu,
+    nav .menu ul {
+        flex-direction: column;
+    }
+
+    .banner .container,
+    .play-games .container
+    {
+        flex-direction: column-reverse;
+    }
+
+    nav .social ul {
+        flex-direction: row;
+    }
+
+    nav .menu ul li {
+        margin: 20px 0;
+    }
+
+    nav .social ul li {
+        margin: 0;
+    }
+
+
+    .games .card-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 24px;
+    }
+
+    .banner {
+        padding: 30px;
+    }
+
+    .banner .btn-secondary {
+        margin-left: 5px;
+    }
+
+    .career {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .about .content {
+        text-align: center;
+        max-width: 100%;
+    }
+
+    .container {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .play-instant .img-box .sm-img {
+        left: 0;
+        width: 50%;
+    }
+
+    .play-games .img-box .sm-img {
+        left: 0;
+        width: 50%;
+    }
+
+    .play-games .content {
+        text-align: center;
+    }
+
+    .tags a { 
+        font-size: 13px;
+        font-weight: 500; 
+        gap: 6px; 
+        padding: 8px;
+        margin: 5px 0; 
+    }
+
+    .tags a img {
+        width: 40px;
+    }
+
+    footer ul {
+        padding: 0;
+    }
+
+    footer ul li {
+        padding: 20px;
+    }
+}
+
+
+
+
+@media screen and (min-width:992px) and (max-width: 1024px) {
+
+    nav,
+    .banner .container,
+    .about .container,
+    .play-instant .container,
+    .career,
+    nav .menu,
+    nav .menu ul {
+        flex-direction: column;
+    }
+
+    .banner .container,
+    .play-games .container
+    {
+        flex-direction: column-reverse;
+    }
+
+    nav .social ul {
+        flex-direction: row;
+    }
+
+    nav .menu ul li {
+        margin: 20px 0;
+    }
+
+    nav .social ul li {
+        margin: 0;
+    }
+
+
+    .games .card-container {
+        grid-template-columns: repeat(3, 1fr);
+        justify-content: center;
+        gap: 24px;
+    }
+
+    .banner {
+        padding: 30px;
+    }
+
+    .banner .btn-secondary {
+        margin-left: 5px;
+    }
+
+    .career {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .about .content {
+        text-align: center;
+        max-width: 100%;
+    }
+
+    .container {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .play-instant .img-box .sm-img {
+        left: 0;
+        width: 50%;
+    }
+
+    .play-games .img-box .sm-img {
+        left: 0;
+        width: 50%;
+    }
+
+    .play-games .content {
+        text-align: center;
+    }
+
+    .tags a { 
+        font-size: 13px;
+        font-weight: 500; 
+        gap: 6px; 
+        padding: 8px;
+        margin: 5px 0; 
+    }
+
+    .tags a img {
+        width: 40px;
+    }
+
+    footer ul {
+        padding: 0;
+    }
+
+    footer ul li {
+        padding: 20px;
     }
 }
