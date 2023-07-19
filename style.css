@@ -10,6 +10,7 @@
 body {
     padding: 0;
     margin: 0;
+    font-size: 1.125rem;
     overflow-x: hidden;
     font-family: 'Work Sans', sans-serif;
 }
@@ -18,33 +19,63 @@ body {
     max-width: 100%;
 }
 
+.btn-primary {
+    border-radius: 48px;
+    padding: 20px 40px;
+    font-size: 1.25rem;
+    font-weight: 600;
+    border: 0;
+    color: #fff;
+    text-transform: uppercase;
+    background: linear-gradient(90deg, #FF42A5 0%, #FF42A5 100%);
+}
+
+.btn-secondary {
+    border-radius: 48px;
+    padding: 20px 40px;
+    font-size: 1.25rem;
+    font-weight: 600;
+    border: 0;
+    border-radius: 48px;
+    color: #fff;
+    background: #4EC5F7;
+    margin-left: 25px;
+    text-transform: uppercase;
+}
+
 /* header css */
 
-nav {
+.navbar {
     background-color: #FFF;
     box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.05);
+}
+
+nav {
+    max-width: 1440px;
+    margin: auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 40px 240px;
+    padding: 30px 0;
 }
 
 nav .logo {
     display: flex;
-    gap: 10px;
+    gap: 20px;
     align-items: center;
 }
 
 nav .logo h1 {
     font-size: 45px;
     font-weight: 700;
+    margin: 0;
     color: var(--black-two);
 }
 
 nav .logo h1 span {
     color: #FF42A5;
 }
- 
+
 nav .menu {
     display: flex;
     align-items: center;
@@ -62,7 +93,7 @@ nav .menu ul li {
     font-weight: 500;
     padding: 0 20px;
 }
- 
+
 
 nav .menu ul li a {
     text-decoration: none;
@@ -72,6 +103,57 @@ nav .menu ul li a {
 nav .social {
     border-radius: 8px;
     background: rgba(11, 2, 35, 0.10);
-    padding: 16px 22px;
-    margin-left: 20px;
+    padding: 0 0.5rem;
+    margin-left: 1.25rem;
+}
+
+/* banner area css */
+
+.banner {
+    padding: 0 240px;
+    background-image: url(images/banner-bg.png);
+    background-position: left top;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+ 
+.banner .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.banner .content h2 {
+    font-size: 3rem;
+    font-weight: 600;
+    color: var(--black-two);
+    text-transform: uppercase;
+    margin-bottom: 0;
+
+}
+
+.banner .content h1.title {
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 6rem;
+    font-weight: 800;
+    margin: 0;
+}
+
+.banner .content ul {
+    list-style: none;
+    font-size: 1.25rem;
+    font-weight: 500;
+    padding: 0;
+    line-height: 45px;
+}
+
+@media screen and (min-width: 1500px) {
+    .container {
+        max-width: 1440px;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
