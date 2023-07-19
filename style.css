@@ -345,16 +345,52 @@ nav .social {
     max-width: 480px;
 }
 
+/* career css */
+ 
 
+.career  {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+    background: linear-gradient(90deg, #FF42A5 0%, #FF42A5 100%);
+    padding-left: 240px;
+}
 
+.career h1 {
+    font-size: 48px;
+}
 
+.career .place {
+    display: flex;
+    justify-content: space-between;
+}
 
+.career .place ul {
+    list-style: none;
+    padding: 0;
+}
 
+.career .place .right {
+    text-align: right;
+}
 
+.career .place ul li{
+    font-size: 1.25rem;
+    font-weight: 600;
+    line-height: 40px;
+}
 
+.career .img-box {
+    min-width: 55%;
+}
 
-
-
+.career button.btn-secondary {
+    background-color: #fff;
+    margin-left: 0;
+    color: #FF42A5;
+    margin-top: 30px;
+}
 
 
 
