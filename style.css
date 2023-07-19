@@ -5,6 +5,7 @@
     --black-two: #0B0223;
     --black-three: #534C64;
     --blue: #4EC5F7;
+    --linear: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
 }
 
 body {
@@ -12,6 +13,7 @@ body {
     margin: 0;
     font-size: 1.125rem;
     overflow-x: hidden;
+    color: var(--black-three);
     font-family: 'Work Sans', sans-serif;
 }
 
@@ -43,6 +45,14 @@ body {
     text-transform: uppercase;
 }
 
+.linear {
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+}
+
+.description {
+   font-size: 18px;
+   line-height: 30px;
+}
 /* header css */
 
 .navbar {
@@ -116,7 +126,7 @@ nav .social {
     background-size: contain;
     background-repeat: no-repeat;
 }
- 
+
 .banner .container {
     display: flex;
     justify-content: space-between;
@@ -133,7 +143,7 @@ nav .social {
 }
 
 .banner .content h1.title {
-    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    background: var(--linear);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -149,6 +159,71 @@ nav .social {
     padding: 0;
     line-height: 45px;
 }
+
+/* about section css */
+
+.about .container {
+    display: flex;
+    /* grid-template-columns: repeat(2, 1fr); */
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+    margin: 60px auto;
+}
+
+.about .content {
+    text-align: right;
+    max-width: 520px;
+}
+
+.about .title {
+    background: var(--linear);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 25px;
+}
+
+.about h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-top: 15px;
+}
+
+.about h5 {
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-bottom: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* responsive css */
 
 @media screen and (min-width: 1500px) {
     .container {
