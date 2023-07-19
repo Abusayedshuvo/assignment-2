@@ -789,3 +789,10 @@ footer .logo h1 span {
         padding: 20px;
     }
 }
+
+@media screen and (max-width:1500px) {
+    
+.career .content {
+    padding: 120px 0;
+}
+}
