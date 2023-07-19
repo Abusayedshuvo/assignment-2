@@ -1,0 +1,77 @@
+/* common css */
+
+:root {
+    --black-one: #3C354F;
+    --black-two: #0B0223;
+    --black-three: #534C64;
+    --blue: #4EC5F7;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+    font-family: 'Work Sans', sans-serif;
+}
+
+.img-fluid {
+    max-width: 100%;
+}
+
+/* header css */
+
+nav {
+    background-color: #FFF;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.05);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 240px;
+}
+
+nav .logo {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+nav .logo h1 {
+    font-size: 45px;
+    font-weight: 700;
+    color: var(--black-two);
+}
+
+nav .logo h1 span {
+    color: #FF42A5;
+}
+ 
+nav .menu {
+    display: flex;
+    align-items: center;
+}
+
+nav .menu ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    padding: 0;
+}
+
+nav .menu ul li {
+    font-size: 18px;
+    font-weight: 500;
+    padding: 0 20px;
+}
+ 
+
+nav .menu ul li a {
+    text-decoration: none;
+    color: var(--black-one);
+}
+
+nav .social {
+    border-radius: 8px;
+    background: rgba(11, 2, 35, 0.10);
+    padding: 16px 22px;
+    margin-left: 20px;
+}
