@@ -503,6 +503,39 @@ footer .logo h1 span {
 
 @media screen and (max-width: 576px) {
 
+body {
+    font-size: 16px;
+}
+
+.banner .content h1.title {
+    font-size: 5rem;
+}
+
+.banner .content h2,
+.games h1,
+.play-instant h1
+{
+    font-size: 2rem;
+    line-height: 40px;
+}
+ 
+footer .scoial {
+    margin: 30px 0;
+}
+
+.career .place ul li {
+    font-size: 1rem;
+    font-weight: 500; 
+}
+
+.btn-primary {
+    font-size: 1rem;
+}
+
+.btn-secondary {
+    font-size: 1rem;
+}
+
     nav,
     .banner .container,
     .about .container,
@@ -514,8 +547,7 @@ footer .logo h1 span {
     }
 
     .banner .container,
-    .play-games .container
-    {
+    .play-games .container {
         flex-direction: column-reverse;
     }
 
@@ -530,7 +562,6 @@ footer .logo h1 span {
     nav .social ul li {
         margin: 0;
     }
-
 
     .games .card-container {
         grid-template-columns: 1fr;
@@ -574,16 +605,20 @@ footer .logo h1 span {
         text-align: center;
     }
 
-    .tags a { 
-        font-size: 13px;
-        font-weight: 500; 
-        gap: 6px; 
-        padding: 8px;
-        margin: 5px 0; 
+.tags {
+    margin: 60px 0;
+}
+
+    .tags a {
+        font-size: 8px;
+        font-weight: 500;
+        gap: 4px;
+        padding: 6px;
+        margin: 4px 0;
     }
 
     .tags a img {
-        width: 40px;
+        width: 25px;
     }
 
     footer ul {
@@ -594,7 +629,7 @@ footer .logo h1 span {
         padding: 20px;
     }
 }
- 
+
 
 
 
@@ -611,8 +646,7 @@ footer .logo h1 span {
     }
 
     .banner .container,
-    .play-games .container
-    {
+    .play-games .container {
         flex-direction: column-reverse;
     }
 
@@ -671,12 +705,12 @@ footer .logo h1 span {
         text-align: center;
     }
 
-    .tags a { 
+    .tags a {
         font-size: 13px;
-        font-weight: 500; 
-        gap: 6px; 
+        font-weight: 500;
+        gap: 6px;
         padding: 8px;
-        margin: 5px 0; 
+        margin: 5px 0;
     }
 
     .tags a img {
@@ -708,8 +742,7 @@ footer .logo h1 span {
     }
 
     .banner .container,
-    .play-games .container
-    {
+    .play-games .container {
         flex-direction: column-reverse;
     }
 
@@ -769,12 +802,12 @@ footer .logo h1 span {
         text-align: center;
     }
 
-    .tags a { 
+    .tags a {
         font-size: 13px;
-        font-weight: 500; 
-        gap: 6px; 
+        font-weight: 500;
+        gap: 6px;
         padding: 8px;
-        margin: 5px 0; 
+        margin: 5px 0;
     }
 
     .tags a img {
@@ -791,8 +824,8 @@ footer .logo h1 span {
 }
 
 @media screen and (max-width:1500px) {
-    
-.career .content {
-    padding: 120px 0;
-}
+
+    .career .content {
+        padding: 120px 0;
+    }
 }
